@@ -11,7 +11,16 @@ This version is intentionally more emotional and animated:
 - responsive mobile design
 - Jujutsu-Kaisen-inspired purple/blue atmosphere without copying official artwork
 
-Open index.html in a browser or use VS Code Live Server.
+For local preview, run `npm install` followed by `npm run build`, or open
+index.html in a browser/use VS Code Live Server.
+
+Deploy to Vercel:
+1. Import this repository in Vercel, or run `vercel` from the project root.
+2. Select the project root as the Root Directory.
+3. Select the Vite framework preset, use `npm run build` as the Build Command,
+   and `dist` as the Output Directory. The Install Command can stay at its
+   default (`npm install`).
+4. Deploy.
 
 To add music:
 1. Put an MP3 inside assets/

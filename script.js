@@ -1,7 +1,7 @@
 const loader=document.getElementById("loader");
 window.addEventListener("load",()=>setTimeout(()=>loader.classList.add("hide"),1100));
 
-function go(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+window.go=function(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
 
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});
 document.querySelectorAll(".reveal").forEach(x=>obs.observe(x));
